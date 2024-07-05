@@ -58,4 +58,7 @@ document
     document.querySelector('.list').children[middleIndex]
   );
 
-  
+// 12. Remove the last element in the list
+const lastItem = document.querySelector('.list').lastElementChild;
+document.querySelector('.list').removeChild(lastItem);
+// det var 'See polar bears in Svalbard'
