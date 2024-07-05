@@ -44,3 +44,18 @@ const newFirstItem = document.createElement('p');
 newFirstItem.textContent = 'Get a garden lot';
 const firstItem = document.querySelector('.list').firstElementChild;
 document.querySelector('.list').replaceChild(newFirstItem, firstItem);
+
+// 11. Replace an element in the middle of the list
+const middleIndex = Math.floor(
+  document.querySelector('.list').children.length / 2
+);
+const newMiddleItem = document.createElement('p');
+newMiddleItem.textContent = 'Travel to Australia';
+document
+  .querySelector('.list')
+  .replaceChild(
+    newMiddleItem,
+    document.querySelector('.list').children[middleIndex]
+  );
+
+  
